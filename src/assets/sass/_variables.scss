@@ -1,0 +1,77 @@
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+
+/*---------------- start font ---------------- */
+@font-face{
+    src: url("../fonts/TrajanPro.ttf");
+    font-family: "TrajanPro";
+}
+/*---------------- end font ---------------- */
+    /*------------------------------------- start sass -----------------------*/
+
+    $mainWidth: 100%;
+    $auxColor: /*#a15b55*/ #921807;
+    $bgColor: #fafafa;
+    $white: #fffffe;
+    $black: #000001;
+    $orange: #f26c4f;
+    $yellow: #e7df00;
+    $blue: #0083D9;
+    $red: #9E005D;
+    $green: #7DD900;
+    $purple: #72219F;
+    $fontSize: 20px;
+    $mainFamily: "TrajanPro" , "sans-serif";
+    $auxFamily: "Gudea" , "sans-serif";
+    $auxFamily2: 'Crimson Text', serif;
+    $mainColor: /*#8e0202*/ #a75807;
+    $transition: all .3s ease-out;
+    @mixin transition($i) {
+        transition: all $i ease-in-out;
+    }
+
+    @mixin transparency($color, $j) {
+        background-color: $color#{$j} !important;
+    }
+
+    @mixin fontawesome($icon) {
+        position: absolute;
+        content: '#{$icon}';
+        font-weight: 900;
+        font-family: 'Font Awesome 5 Free';
+    }
+
+    @mixin gr-tr($color1, $color2, $k, $l) {
+        background: -webkit-linear-gradient( to right bottom, $color1#{$k}, $color2#{$l});
+        background: -webkit-linear-gradient(to right bottom, $color1#{$k}, $color2#{$l});
+        background: -moz-linear-gradient(to right bottom, $color1#{$k}, $color2#{$l});
+        background: -ms-linear-gradient(to right bottom, $color1#{$k}, $color2#{$l});
+        background: -o-linear-gradient(to right bottom, $color1#{$k}, $color2#{$l});
+        background: linear-gradient(to right bottom, $color1#{$k}, $color2#{$l});
+    }
+
+    @mixin prefixes($property, $attributes) {
+        -webkit-#{$property}: $attributes;
+        -moz-#{$property}: $attributes;
+        -ms-#{$property}: $attributes;
+        -o-#{$property}: $attributes;
+        #{$property}: #{$attributes};
+    }
+
+    %gradient {
+        background: -webkit-linear-gradient( to right bottom, $mainColor, $auxColor);
+        background: -webkit-linear-gradient( to right bottom, $mainColor, $auxColor);
+        background: -moz-linear-gradient( to right bottom, $mainColor, $auxColor);
+        background: -ms-linear-gradient( to right bottom, $mainColor, $auxColor);
+        background: -o-linear-gradient( to right bottom, $mainColor, $auxColor);
+        background: linear-gradient( to right bottom, $mainColor, $auxColor);
+    }
+
+    %transition {
+        transition: $transition;
+    }
+
+
+    /*---------------------------------- end sass --------------------------------*/

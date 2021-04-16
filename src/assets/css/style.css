@@ -1,0 +1,304 @@
+@charset "UTF-8";
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+/*---------------- start font ---------------- */
+@font-face {
+  src: url("../fonts/TrajanPro.ttf");
+  font-family: "TrajanPro"; }
+/*---------------- end font ---------------- */
+/*------------------------------------- start sass -----------------------*/
+.navbar .nav-item:after {
+  transition: all 0.3s ease-out; }
+
+/*---------------------------------- end sass --------------------------------*/
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+/*---------------- start font ---------------- */
+@font-face {
+  src: url("../fonts/TrajanPro.ttf");
+  font-family: "TrajanPro"; }
+/*---------------- end font ---------------- */
+/*------------------------------------- start sass -----------------------*/
+.navbar .nav-item:after {
+  transition: all 0.3s ease-out; }
+
+/*---------------------------------- end sass --------------------------------*/
+/*-------------------------------------- start global -----------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: url("../img/mouse.png"), auto !important; }
+
+body {
+  background-color: #fffffe;
+  font-family: "Gudea", "sans-serif"; }
+
+a {
+  text-decoration: none !important; }
+
+button,
+input,
+select,
+textarea {
+  font-family: "Gudea", "sans-serif" !important; }
+
+.white {
+  color: #fffffe; }
+
+.black {
+  color: #000001; }
+
+.main-colored {
+  color: #a75807; }
+
+.aux-colored {
+  color: #921807; }
+
+.main-back {
+  background-color: #a75807; }
+
+.aux-back {
+  background-color: #921807; }
+
+#mouse-follower {
+  z-index: 9999;
+  pointer-events: none;
+  backface-visibility: hidden; }
+
+.custom-control-label::before {
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #646465; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #a75807;
+  border-color: #a75807; }
+
+::-webkit-scrollbar {
+  width: .25em; }
+
+::-webkit-scrollbar-track {
+  background-color: #000001; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #f26c4f;
+  border-radius: 5px; }
+
+/*------------------------- end global -----------------------*/
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+/*---------------- start font ---------------- */
+@font-face {
+  src: url("../fonts/TrajanPro.ttf");
+  font-family: "TrajanPro"; }
+/*---------------- end font ---------------- */
+/*------------------------------------- start sass -----------------------*/
+.navbar .nav-item:after {
+  transition: all 0.3s ease-out; }
+
+/*---------------------------------- end sass --------------------------------*/
+/* start navbar */
+.navbar {
+  z-index: 4 !important;
+  padding: 20px 27px; }
+  .navbar .navbar-brand {
+    margin-right: 73px !important; }
+  .navbar .nav-item {
+    color: #fffffe !important;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Gudea", "sans-serif";
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 44px; }
+    .navbar .nav-item:after {
+      position: absolute;
+      content: '';
+      top: calc(50% - 1px);
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: #f26c4f; }
+    .navbar .nav-item:hover:after {
+      width: 100%; }
+
+/* end navbar */
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+/*---------------- start font ---------------- */
+@font-face {
+  src: url("../fonts/TrajanPro.ttf");
+  font-family: "TrajanPro"; }
+/*---------------- end font ---------------- */
+/*------------------------------------- start sass -----------------------*/
+.navbar .nav-item:after {
+  transition: all 0.3s ease-out; }
+
+/*---------------------------------- end sass --------------------------------*/
+/*--------------------------- start main-page -----------------*/
+.main-page #myVideo, .main-page .layer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+.main-page .layer {
+  z-index: 2;
+  background: url("../img/pattern.png") no-repeat top center fixed;
+  background-size: 101% 101%; }
+.main-page .hello {
+  font-family: "TrajanPro", "sans-serif";
+  z-index: 5;
+  color: #fffffe;
+  position: relative;
+  letter-spacing: 2px; }
+  .main-page .hello h6 {
+    font-size: 20px; }
+  .main-page .hello h1 {
+    font-size: 72px; }
+.main-page .discover-icon {
+  z-index: 5;
+  position: relative;
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: "Gudea", "sans-serif";
+  font-weight: 700; }
+  .main-page .discover-icon img {
+    margin-bottom: 10px;
+    animation: rotate 3s linear infinite; }
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+/*--------------------------- end main-page -------------*/
+/*--------------------------- start contact -------------*/
+.contact {
+  background: #111111 url("../img/contact-bg.png") no-repeat bottom -168px center fixed;
+  background-size: cover;
+  padding-top: 140px; }
+  .contact p {
+    font-size: 20px;
+    font-weight: 400; }
+  .contact .contact-info {
+    margin-top: 60px; }
+    .contact .contact-info div {
+      position: relative;
+      margin-bottom: 80px; }
+      .contact .contact-info div:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -39px;
+        height: 2px;
+        width: 30px;
+        background-color: #f26c4f; }
+      .contact .contact-info div:last-of-type:before {
+        display: none; }
+      .contact .contact-info div h4 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 21px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px; }
+      .contact .contact-info div span {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px; }
+  .contact .contact-form h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Gudea", "sans-serif";
+    margin-bottom: 44px; }
+  .contact .contact-form .form-control {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    font-size: 22px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-left: 0;
+    margin-bottom: 40px;
+    resize: none; }
+  .contact .contact-form button {
+    background-color: #f26c4f;
+    width: 217px;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 28px;
+    padding: 18px;
+    text-align: left;
+    color: #fffffe;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    margin-right: 64px; }
+  .contact .contact-form .custom-file input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0; }
+  .contact .contact-form .custom-file i {
+    color: #f26c4f;
+    font-size: 24px;
+    line-height: 60px;
+    margin-right: 22px; }
+  .contact .contact-form .custom-file span {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    top: -3px; }
+
+/*--------------------------- end contact -------------*/
+    /*
+    designed by "wasem gamal eldessouki"," وسيم جمال الدسوقى "
+    portfolio  waseeem.com
+*/
+/*---------------- start font ---------------- */
+@font-face {
+  src: url("../fonts/TrajanPro.ttf");
+  font-family: "TrajanPro"; }
+/*---------------- end font ---------------- */
+/*------------------------------------- start sass -----------------------*/
+.navbar .nav-item:after {
+  transition: all 0.3s ease-out; }
+
+/*---------------------------------- end sass --------------------------------*/
+/*--------------------------- start footer -----------------*/
+/*--------------------------- end footer -----------------*/
+
+/*# sourceMappingURL=style.css.map */

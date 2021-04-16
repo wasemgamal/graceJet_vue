@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+
+/* start navbar */
+
+.navbar {
+    z-index: 4 !important;
+    padding: 20px 27px;
+    .navbar-brand{
+      margin-right: 73px !important;
+      margin-left: 10px;
+    }
+     .navbar-toggler-icon{
+      background-image: url(../img/menu.png) !important;
+    }
+    .nav-item > a{
+        color: $white !important;
+        font-size: $fontSize - 9;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: $auxFamily;
+        text-transform: uppercase;
+        position: relative;
+        margin-right: 44px;
+        &:after{
+          position: absolute;
+          content: '';
+          top: calc(50% - 1px);
+          left: 0;
+          height: 2px;
+          width: 0;
+          @extend %transition;
+          background-color: $orange;
+        }
+        &:hover:after {
+          width: $mainWidth;
+        }
+        &.router-link-active{
+          color: $orange !important;
+        }
+    }
+}
+
+
+/* end navbar */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

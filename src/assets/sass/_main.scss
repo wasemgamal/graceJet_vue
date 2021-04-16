@@ -1,0 +1,500 @@
+@import "variables.scss";
+
+/*--------------------------- start main-page -----------------*/
+.main-page{
+
+  #myVideo, .layer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .layer{
+    z-index: 2;
+    background: url('../img/pattern.png') repeat top center fixed;
+    background-size: cover;
+  }
+  .hello{
+    font-family: $mainFamily;
+    z-index: 5;
+    color: $white;
+    position: relative;
+    letter-spacing: 2px;
+    h6{
+      font-size: $fontSize;
+    }
+    h1{
+      font-size: $fontSize * 3.6;
+    }
+  }
+  .discover-icon{
+    z-index: 5;
+    position: relative;
+    margin-top: 10px;
+    font-size: $fontSize - 10;
+    letter-spacing: 2px;
+    font-family: $auxFamily;
+    font-weight: 700;
+    img{
+      margin-bottom: 10px;
+      animation: rotate 3s linear infinite;
+      @keyframes rotate{
+        from{
+          @include prefixes(transform , rotate(0deg));
+        }
+        to{
+          @include prefixes(transform , rotate(360deg));
+        }
+      }
+    }
+  }
+}
+/*--------------------------- end main-page -------------*/
+
+/*--------------------------- start contact -------------*/
+.contact{
+  background: #111111 url("../img/contact-bg.png") no-repeat bottom center fixed;
+  background-size: cover;
+  padding-top: 105px;
+  min-height: 100vh;
+  p{
+    font-size: $fontSize;
+    font-weight: 400;
+  }
+  .contact-info{
+    margin-top: 30px;
+    div{
+      position: relative;
+      margin-bottom: 40px ;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -19px;
+        height: 2px;
+        width: 30px;
+        background-color: $orange;
+      }
+      &:last-of-type:before{
+        display: none;
+      }
+      h4{
+        font-size: $fontSize - 2;
+        letter-spacing: 1px;
+        line-height: 21px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      span{
+        display: block;
+        font-size: $fontSize - 4;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+
+  }
+  .contact-form{
+    h1{
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: $auxFamily;
+      line-height: 50px;
+    }
+    h3{
+      font-size: $fontSize ;
+      line-height: 28px;
+      font-family: $auxFamily;
+      margin-bottom: 30px;
+
+    }
+    .form-control{
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      @include prefixes(box-shadow,none !important);
+      font-size: $fontSize + 2;
+      line-height: 21px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      resize: none;
+      color: $white;
+      white-space: pre;
+    }
+    button.btn-default{
+      background-color: $orange;
+      width: 217px;
+      font-size: $fontSize;
+      font-weight: 700px;
+      padding: 0 18px;
+      height: 55px;
+      text-align: left;
+      color: $white;
+      @include prefixes(box-shadow,none !important);
+      margin-right:64px;
+      text-transform: uppercase;
+    }
+    .custom-file{
+
+      input{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: $mainWidth;
+        height: 100%;
+        z-index: 4;
+        opacity: 0;
+
+      }
+      i{
+        color: $orange;
+        font-size: $fontSize + 4;
+        line-height: 60px;
+        margin-right: 22px;
+      }
+      span{
+        font-size: $fontSize - 7;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+}
+/*--------------------------- end contact -------------*/
+
+/*--------------------------- start services -------------*/
+.services{
+  background:url(../img/services-bg.png) no-repeat center center;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 103px;
+    background-color: transparent;
+    // border-right: 1px solid #ffffff33 ;
+    z-index: 1; 
+  }
+}
+
+.services,
+.service1,
+.service2,
+.service3,
+.service4,
+.service5,
+.service6,
+.service7
+{
+  background-size: cover !important;
+  
+  background-attachment: fixed !important;
+  // .layer{
+  //   background: url('../img/service-pattern.png') repeat center center fixed !important;
+  // }
+}
+.service1{
+  background:url('../img/service1.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $yellow !important;
+    }
+  }
+}
+.service2{
+  background:url('../img/service2.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $blue !important;
+    }
+  }
+}
+
+.service3{
+  background:url('../img/service3.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $red !important;
+    }
+  }
+}
+.service4{
+  background:url('../img/service4.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $orange !important;
+    }
+  }
+}
+.service5{
+  background:url('../img/service5.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $green !important;
+    }
+  }
+}
+.service6{
+  background:url('../img/service6.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $purple !important;
+    }
+  }
+}
+.service7{
+  background:url('../img/service7.png') no-repeat top center;
+  .services-pagination{
+    .router-link-active{
+      border-color: $red !important;
+    }
+  }
+}
+#services{    
+    min-height: 100vh;
+    transition: background 1s linear;
+  .layer{
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    .container{
+      min-height: 100vh;
+      padding-top: 100px !important;
+      
+    }
+    .services-list{
+
+      li{
+        margin-bottom: 35px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+        &:before{
+          content:'';
+          position: absolute;
+          @extend %transition;
+          width:12px;
+          height:12px;
+          border-radius: 50%;
+          background-color: $white;
+          left: -65px;
+          top: calc(50% - 6px);
+          z-index: 3;
+        }
+        &:hover:before{
+          background-color: $orange;
+          transform: scale(1.6,1.6);
+        }
+      }
+      a{
+        color: $white;
+        font-size: $fontSize - 3;
+        font-family: $auxFamily;
+      }
+    }
+    .service-details{
+      position: absolute;
+      // min-width: 84%;
+      left: auto;
+      right: auto;
+      .service-info{
+        h1{
+          font-family: $auxFamily2;
+          letter-spacing: 3px;
+          font-size: $fontSize + 10;
+          opacity: .6;
+          text-transform: uppercase;
+        }
+        p{
+          font-size: $fontSize - 2;
+          font-family: $auxFamily;
+          line-height: 26px;
+          color: $white;
+          font-weight: 400;
+        }
+      }
+      .extra-list{
+        li{
+          color: $white;
+          line-height: 26px;
+        }
+      }
+    }
+    .services-pagination{
+      position: fixed;
+      bottom: 15px;
+      left: 0;
+      width: $mainWidth;
+      height: 30px;
+      
+      li{
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        padding: 4px;
+        margin: 3px 31px;
+        border-radius: 50%;
+        a{
+          width: 12px;
+          height: 12px;
+          display: block;
+          border-radius: 50%;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+/*--------------------------- end services -------------*/
+
+
+/*--------------------------- start about -------------*/
+.about{
+  // &:before{
+  //   position: absolute;
+  //   content: '';
+  //   left: -1px;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 103px;
+  //   background:url(../img/about-rec.png) repeat;
+  //   z-index: 1; 
+  //   overflow: hidden;
+  // }
+  // &:before{
+  //   position: fixed;
+  //   content: '';
+  //   left: 0;
+  //   top: 0;
+  //   height: 100vh;
+  //   width: 103px;
+  //   background-color: $black;
+  //   z-index: 3; 
+  //   mix-blend-mode:saturation;
+  // }
+  [class*='about']{
+    height: 100vh;
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    &:before{
+      left: 102px;
+      width: 1px;
+      content: '';
+      position: absolute;
+      background-color: $white;
+      height: 50vh;
+    }
+    h2{
+      font-family: $auxFamily2;
+      font-size: $fontSize + 10;
+      text-transform: uppercase;
+    }
+    img{
+      right:0;
+    }
+    div div{
+      position: absolute;
+      left: 150px;
+      width: 450px;
+    }
+    p{
+      font-family: $auxFamily;
+      font-size: $fontSize - 4;
+      line-height: 26px;
+      text-align: justify;
+    }
+    &.about1{
+      background-image: url(../img/about1.png);
+      &:before{
+        top: 0vh;
+      }
+      img{
+        position: absolute;
+        top: 15%;
+        right:10%;
+      }
+      div div{
+        top: 22%;
+        
+      }
+    }
+    &.about2{
+      background-image: url(../img/about2.png);
+      &:before{
+        top: 25vh;
+      }
+      img{
+        position: absolute;
+        top: 25%;
+      }
+      div div{
+        
+        bottom: 40%;
+      }
+    }
+    &.about3{
+      background-image: url(../img/about3.png);
+      &:before{
+        top: 50vh;
+      }
+      img{
+        position: absolute;
+        bottom: 0;
+      }
+      div div{
+        bottom: 10% ;
+      }
+    }
+    
+    
+  
+  }
+  .bullets{
+    position: fixed;
+    height: 54vh;
+    top: 23vh;
+    z-index: 3;
+    left: 103px;
+    width: 0;
+    background-color: $white;
+    a{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: block;
+      background-color: $white;
+    }
+  }
+}
+/*--------------------------- end about -------------*/
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+@media (max-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
